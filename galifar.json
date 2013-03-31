@@ -1,0 +1,360 @@
+{
+    "name": "Galifar",
+    "designation": "Year since Kingdom",
+    "abbreviation": "YK",
+    "months": [
+        {"name": "Zarantyr", "days": 28},
+        {"name": "Olarune", "days": 28},
+        {"name": "Therendor", "days": 28},
+        {"name": "Eyre", "days": 28},
+        {"name": "Dravago", "days": 28},
+        {"name": "Nymm", "days": 28},
+        {"name": "Lharvion", "days": 28},
+        {"name": "Barrakas", "days": 28},
+        {"name": "Rhaan", "days": 28},
+        {"name": "Sypheros", "days": 28},
+        {"name": "Aryth", "days": 28},
+        {"name": "Vult", "days": 28}
+    ],
+    "seasons": [
+        {"name": "Mid-Winter",   "month": 1, "day": 1},
+        {"name": "Late Winter",  "month": 2, "day": 1},
+        {"name": "Early Spring", "month": 3, "day": 1},
+        {"name": "Mid-Spring",   "month": 4, "day": 1},
+        {"name": "Late Spring",  "month": 5, "day": 1},
+        {"name": "Early Summer", "month": 6, "day": 1},
+        {"name": "Mid-Summer",   "month": 7, "day": 1},
+        {"name": "Late Summer",  "month": 8, "day": 1},
+        {"name": "Early Autumn", "month": 9, "day": 1},
+        {"name": "Mid-Autumn",   "month": 10, "day": 1},
+        {"name": "Late Autumn",  "month": 11, "day": 1},
+        {"name": "Early Winter", "month": 12, "day": 1}
+    ],
+    "days": ["Sul", "Mol", "Zol", "Wir", "Zor", "Far", "Sar"],
+    "events": [
+        {
+            "type": "festival", "month": 1, "day": 13,
+            "name": "Revelations Day / Ascension Day",
+            "notes": "Blood of Vol, A day to analyze the growth a faithful as made in the past year. Communal blood donation followed by indigestion of communal blood pool. Causes a psychotropic like effect called a blood trip, chance to visualize truths in both the individual's blood and the communities."
+        },
+        {
+            "type": "festival", "month": 1, "day": 14,
+            "name": "Rebirth Eve",
+            "notes": "Silver Flame, Occurs on the winter solstice. Faithful stay up the entire night holding spiritual vigil and guarding against evil on the longest night of the year. Following day is spent resting or celebrating. (FoE 63)"
+        },
+        {
+            "type": "festival", "month": 2, "day": 18,
+            "name": "Bright Souls' Day",
+            "notes": "Silver Flame, Those who have lost relatives in the last five years perform the funeral rite on the gravesite (or a church if gravesite is inaccessible). Everyone else sings paeans of gratitude to the fallen. On this day the faithful are not allowed to use artificial or magical light sources exept in emergencies (FoE 63)"
+        },
+        {
+            "type": "festival", "month": 2, "day": 20,
+            "name": "The Day of Mourning",
+            "notes": "Exactly what it says on the tin"
+        },
+        {
+            "type": "festival", "month": 3, "day": 1,
+            "name": "Burning Titan",
+            "notes": "Stormreach, .Its burning man. Used to celebrate the giants getting their ass handed to them by dragons. House Phiarlan supplies entertainment around the clock. Much drinking and dancing is to be had. The wicker Titan is burn at sundown. (SR 26)"
+        },
+        {
+            "type": "festival", "month": 3, "day": 5,
+            "name": "Tirasday",
+            "notes": "Silver Flame, This celebrates both the start of planting season and the birth of Tira Miron. This is a day of work, but also joyous celebration in the evenings. It is a time for giving gifts, and is a popular marriage date. (FoE 64)"
+        },
+        {
+            "type": "festival", "month": 3, "day": 15,
+            "name": "Sun's Blessing",
+            "notes": "The Sovereign Host, Festival to Dol Arrah is a day of peace when enemies set aside their differences. (FoE 22)"
+        },
+        {
+            "type": "festival", "month": 4, "day": 11,
+            "name": "Initiation Day",
+            "notes": "The Silver Flame, Day the church declared itself its own religion and not an offshoot of the host. Most groundbreaking for new cathedrals happen on this day and it is a common day for seminary graduations. (FoE 64)"
+        },
+        {
+            "type": "festival", "month": 5, "day": 6,
+            "name": "Baker's Night",
+            "notes": "The Silver Flame, On this night families and friends gather and share baked goods and other treats. Very popular holiday among children (FoE 64). Named for Keith Baker."
+        },
+        {
+            "type": "festival", "month": 5, "day": 20,
+            "name": "Pirate's Moon",
+            "notes": "Stormreach, Commemorates the deaths of two of the first Pirate lords for truly they were badass. After turning back major attacks both from jungle and sea they engaged an entire armada in defense of the city. They won but were both mortally wounded, they fell overboard and drowned. Offerings are given to the sea so the Devourer will eat the sacrifices and not the two lords. Is also essentially pirate valentine's day to celebrate the love the lords shared. (SR 26-27)"
+        },
+        {
+            "type": "festival", "month": 5, "day": 26,
+            "name": "Aureon's Crown",
+            "notes": "The Sovereign Host, Celebration of knowledge, This holiday features lectures and sermons. It is also a popular date for graduation and commencement ceremonies (FoE 22)"
+        },
+        {
+            "type": "festival", "month": 5, "day": 28,
+            "name": "Promisetide",
+            "notes": "The Silver Flame,  A day to celebrate the promise of paradise to come. They honor but do not worship the host for creating the world that the flame will complete and for them stepping down to allow the Flame its rightful place as the last god of Eberron.  (FoE 64)"
+        },
+        {
+            "type": "festival", "month": 6, "day": 14,
+            "name": "The Annual Games End",
+            "notes": "Stormreach, Open tournament at the arena. Games last two weeks with the winner getting their weight in gold, braggin rights, and the chance to become a bloodbound gladiator (SR 27)"
+        },
+        {
+            "type": "festival", "month": 6, "day": 1,
+            "name": "The Annual Games Start",
+            "notes": "Stormreach, Open tournament at the arena. Games last two weeks with the winner getting their weight in gold, braggin rights, and the chance to become a bloodbound gladiator (SR 27)"
+        },
+        {
+            "type": "festival", "month": 6, "day": 12,
+            "name": "Brightblade",
+            "notes": "The Sovereign Host, Dedicated to Dol Dorn, This festival is marked by gladiatorial and athletic contests (FoE 22)"
+        },
+        {
+            "type": "festival", "month": 6, "day": 21,
+            "name": "First Dawn",
+            "notes": "The Silver Flame, Celebrates the day in 914 YK that the church took control of the government. Give thanks that at least one nation has embraced the true faith. Pray that the diet of cardinals lead the nation wisely and thank King Thalin for paving the way for the takeover. (FoE 64)"
+        },
+        {
+            "type": "festival", "month": 7, "day": 14,
+            "name": "Silvertide",
+            "notes": "The Silver Flame, The highest holy day in the faith. It commemorates the sacrifice of the couatl and the birth of the Silver Flame. All faithful spend the day in prayer and observance unless they have absolutely no other option. (FoE 64)"
+        },
+        {
+            "type": "festival", "month": 8, "day": 4,
+            "name": "The Hunt",
+            "notes": "The Sovereign Host, This holiday in honor of Balinor features communal hunts of dangerous game (FoE 22)"
+        },
+        {
+            "type": "festival", "month": 8, "day": 9,
+            "name": "Victory Day",
+            "notes": "The Silver Flame, Commemorates the successful conclusion of the lycanthropic purge. Children enact battles with toy swords. Adults attend sermons on the lessons of the triumphs, defeats, and the sometimes questionable methods used by the templar's during the purge. (FoE 64)"
+        },
+        {
+            "type": "festival", "month": 9, "day": 9,
+            "name": "Bolderi's Feast",
+            "notes": "The Sovereign Host, This feast of community is an occasion for extravagant parties, and is also the traditional day for elections. (FoE 22)"
+        },
+        {
+            "type": "festival", "month": 10, "day": 1,
+            "name": "The Ascension",
+            "notes": "The Silver Flame, A day of remberance of the sacrifice of Tira Miron. They attend great blessing ceremonies in the cathedrals, reaffirm their faith, and give thanks to Tira. On this day faithful seeks ways to contribute to the community. (FoE 64)"
+        },
+        {
+            "type": "festival", "month": 10, "day": 18,
+            "name": "Wildnight",
+            "notes": "The Dark Six, At sunset on Wildnight, worshipers and nonfaithful alike give vent to their passions, in a raucous festival dedicated to the Fury (FoE 44)"
+        },
+        {
+            "type": "festival", "month": 10, "day": 25,
+            "name": "Saint Valtros's Day",
+            "notes": "The Silver Flame, Commemorates the birth of Saint Valtros the first Paladin of the Silver Flame. Church services and a brief prayer.  (FoE 64)"
+        },
+        {
+            "type": "festival", "month": 11, "day": 1,
+            "name": "Shacklebreak",
+            "notes": "Stormreach, On this day no crimes short of murder or arson are punished(Because **** yeah pirates!). Many criminals are givin amnesty and chaos reigns in the streets. Lots of vandalism, fighting, and dancing around bonfires. Most people wear masks to hide their identities (SR 27)"
+        },
+        {
+            "type": "festival", "month": 11, "day": 11,
+            "name": "Thronehold",
+            "notes": "On 11 Aryth 996 YK, the signing of the Treaty of Thronehold formally ended the Last War, bringing a century of bloodshed to a close. As might have been expected, the day has become an important holiday celebrated throughout the Five Nations. It is a new holiday, celebrated for only the second time this year. (Sharn)"
+        },
+        {
+            "type": "festival", "month": 11, "day": 24,
+            "name": "Rampartide",
+            "notes": "The Silver Flame, At the turn to the winter season which means longer nights the faithful shield themselves against evil. This is a time of fasting and repentance. This is a time to atone for the evil within. Children, sick, and elderly must only give up their favorite food instead of fast. (FoE 64)"
+        },
+        {
+            "type": "festival", "month": 12, "day": 27,
+            "name": "Khbyersef",
+            "notes": "The Silver Flame, Night when light and good are at their weakest and evil is at its strongest. Night spent in intence prayer and spiritual vigilance. Many quests and crusades begin on this day. (FoE 64)"
+        },
+        {
+            "type": "festival", "month": 12, "day": 26,
+            "name": "Long Shadows (Night 1)",
+            "notes": "The Dark Six, Dark Magic dominated this three-day period that honors the Shadow (FoE 44)"
+        },
+        {
+            "type": "festival", "month": 12, "day": 27,
+            "name": "Long Shadows (Night 2)",
+            "notes": "The Dark Six, Dark Magic dominated this three-day period that honors the Shadow (FoE 44)"
+        },
+        {
+            "type": "festival", "month": 12, "day": 28,
+            "name": "Long Shadows (Night 3)",
+            "notes": "The Dark Six, Dark Magic dominated this three-day period that honors the Shadow (FoE 44)"
+        },
+        {
+            "type": "festival", "month": 10, "day": 17,
+            "name": "Oalian Thanks Ceremony",
+            "notes": "Druidic ritual, Give Mead to Oalian as thanks (FoE 91)"
+        },
+        {
+            "type": "festival", "month": 1, "day": 15,
+            "name": "Winter Solstice",
+            "notes": "Date of the Winter Solstice. Druids Celebrate."
+        },
+        {
+            "type": "festival", "month": 7, "day": 15,
+            "name": "Summer Solstice",
+            "notes": "Date of the Summer Solstice. Druids Celebrate."
+        },
+        {
+            "type": "festival", "month": 4, "day": 15,
+            "name": "Spring Equinox",
+            "notes": "Date of the Spring Equinox. Druids Celebrate."
+        },
+        {
+            "type": "festival", "month": 10, "day": 15,
+            "name": "Autumn Equinox",
+            "notes": "Date of the Autumn Equinox. Druids Celebrate."
+        },
+        {
+            "type": "story", "month": 10, "day": 23,
+            "name": "Campaign Start",
+            "notes": "Korranberg Chronicle to come."
+        }
+    ],
+    "satellites": [
+        {"full": 1, "period": 28, "name": "Nymm"},
+        {"full": 1, "period": 35, "name": "Sypheros"},
+        {"full": 1, "period": 42, "name": "Therendor"},
+        {"full": 8, "period": 49, "name": "Rhaan"},
+        {"full": 1, "period": 56, "name": "Olarune"},
+        {"full": 22, "period": 63, "name": "Eyre"},
+        {"full": 1, "period": 70, "name": "Vult"},
+        {"full": 28, "period": 77, "name": "Zarantyr"},
+        {"full": 1, "period": 84, "name": "Anyth"},
+        {"full": 57, "period": 91, "name": "Dravago"},
+        {"full": 57, "period": 98, "name": "Lharvion"},
+        {"full": 1, "period": 105, "name": "Barrakas"}
+    ],
+    "planes": [
+        {
+            "daysCoterminous": 33600,
+            "daysRemote": 33600,
+            "daysRemoteToCoterminous": 33600,
+            "daysCoterminousToRemote": 33600,
+            "coterminousMonth": 1,
+            "coterminousDay": 1,
+            "name": "Daanvi, the Perfect Order"
+        },
+        {
+            "name": "Dal Quor, the Region of Dreams",
+            "coterminousMonth": 1,
+            "coterminousDay": 1,
+            "daysCoterminous": 0,
+            "daysRemote": 9999999999999999,
+            "daysRemoteToCoterminous": 0,
+            "daysCoterminousToRemote": 0
+        },
+        {
+            "name": "Dolurrh, the Realm of the Dead",
+            "coterminousMonth": 1,
+            "coterminousDay": 1,
+            "daysCoterminous": 336,
+            "daysRemote": 336,
+            "daysRemoteToCoterminous": 16464,
+            "daysCoterminousToRemote": 16464
+        },
+        {
+            "name": "Fernia, the Sea of Fire",
+            "coterminousMonth": 7,
+            "coterminousDay": 1,
+            "daysCoterminous": 28,
+            "daysRemote": 28,
+            "daysRemoteToCoterminous": 812,
+            "daysCoterminousToRemote": 812
+        },
+        {
+            "name": "Irian, the Eternal Day",
+            "coterminousMonth": 4,
+            "coterminousDay": 2,
+            "daysCoterminous": 10,
+            "daysRemote": 10,
+            "daysRemoteToCoterminous": 494,
+            "daysCoterminousToRemote": 494
+        },
+        {
+            "name": "Kythri, the Churning Chaos",
+            "rand": 1,
+            "daysCoterminousLowerBound": 1,
+            "daysCoterminousUpperBound": 33600,
+            "coterminousDist": "linear",
+            "daysRemoteLowerBound": 1,
+            "daysRemoteUpperBound": 33600,
+            "remoteDist": "linear",
+            "daysCoterminousToRemoteLowerBound": "1",
+            "daysCoterminousToRemoteUpperBound": "117600",
+            "waningDist": "normal",
+            "daysRemoteToCoterminousLowerBound": "1",
+            "daysRemoteToCoterminousUpperBound": "117600",
+            "waxingDist": "normal"
+        },
+        {
+            "name": "Lamannia, the Twilight Forest",
+            "coterminousMonth": 4,
+            "coterminousDay": 6,
+            "daysCoterminous": 7,
+            "daysRemote": 7,
+            "daysRemoteToCoterminous": 161,
+            "daysCoterminousToRemote": 161
+        },
+        {
+            "name": "Mabar, the Endless Night",
+            "coterminousMonth": 1,
+            "coterminousDay": 3,
+            "daysCoterminous": 3,
+            "daysRemote": 5,
+            "daysRemoteToCoterminous": 835,
+            "daysCoterminousToRemote": 837
+        },
+        {
+            "name": "Risia, the Plain of Ice",
+            "coterminousMonth": 1,
+            "coterminousDay": 1,
+            "daysCoterminous": 28,
+            "daysRemote": 28,
+            "daysRemoteToCoterminous": 835,
+            "daysCoterminousToRemote": 835
+        },
+        {
+            "name": "Shavarath, the Battleground",
+            "coterminousMonth": 1,
+            "coterminousDay": 1,
+            "daysCoterminous": 336,
+            "daysRemote": 336,
+            "daysRemoteToCoterminous": 5712,
+            "daysCoterminousToRemote": 5712
+        },
+        {
+            "name": "Syrania, the Azure Sky",
+            "coterminousMonth": 7,
+            "coterminousDay": 1,
+            "daysCoterminous": 336,
+            "daysRemote": 336,
+            "daysRemoteToCoterminous": 1679,
+            "daysCoterminousToRemote": 1679
+        },
+        {
+            "name": "Thelanis, the Faerie Court",
+            "coterminousMonth": 7,
+            "coterminousDay": 7,
+            "daysCoterminous": 2352,
+            "daysRemote": 4704,
+            "daysRemoteToCoterminous": 34272,
+            "daysCoterminousToRemote": 34272
+        },
+        {
+            "name": "Xoriat",
+            "coterminousMonth": 7,
+            "coterminousDay": 2,
+            "daysCoterminous": 336,
+            "daysRemote": 336,
+            "daysRemoteToCoterminous": 1175664,
+            "daysCoterminousToRemote": 1175664
+        }
+    ],
+    "planeStartYear": -9000,
+    "startDate": 1,
+    "startYear": 998,
+    "startWeekDay": 1
+}
