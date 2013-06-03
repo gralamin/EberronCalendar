@@ -135,7 +135,7 @@ class Calendar:
                     daysSkipped = 0
                 print self._genDateEvents(weekDay, day, month, curYear,
                                           force=True, moons=moons)
-                while (day <= month.length):
+                while (day < month.length):
                     day += 1
                     weekDay += 1
                     dayOfYear += 1
