@@ -92,7 +92,17 @@ class Calendar:
     def display(self, moons=None, planes=None, numYears=1):
         firstDay = self.startDate
         firstWeekDay = self.startWeekDay
-        daysSkipped = 0
+        self._generateHeader(numYears)
+
+        for i in range(0, numYears):
+            dayOfYear = 0
+            curYear = self.startYear + i
+            for month in self.months:
+                firstDay, firstWeekDay, dayOfYear = self._genOneMonth(
+                    month, firstDay, firstWeekDay, dayOfYear, curYear, planes,
+                    moons)
+
+    def _generateHeader(self, numYears):
         if (numYears == 1):
             print "[size=5]%s Calendar %d %s (%s)[/size]" % (self.name,
                                                              self.startYear,
@@ -103,56 +113,64 @@ class Calendar:
             print "[size=5]%s Calendar %d-%d %s (%s)[/size]" % \
                 (self.name, self.startYear, finalYear, self.designation,
                  self.abbreviation)
-        for i in range(0, numYears):
-            dayOfYear = 0
-            curYear = self.startYear + i
-            for month in self.months:
-                print ""
-                print "[size=3]%s[/size]" % month.name
-                if planes:
-                    planeList = []
-                    for plane in planes:
-                        v, i = plane.getPlaneAtDate(dayOfYear, curYear, self)
-                        if (v == "Coterminous"):
-                            planeList.append("[u]%s:[/u] [color=Red]Coterminous[/color] for %d days" % \
-                                             (plane.name, i))
-                        elif (v == "Remote"):
-                            if "Dal Quor" in plane.name:
-                                planeList.append("Dal Quor is still remote")
-                                continue
-                            planeList.append("[u]%s:[/u] [color=Green]Remote[/color] for %d days" % \
-                                             (plane.name, i))
-                        else:
-                            planeList.append("[u]%s:[/u] %s for %d days" % \
-                                             (plane.name, v, i))
-                    if len(planeList) > 0:
-                        print "[spoiler=Planar activity]"
-                        for item in planeList:
-                            print item
-                        print "[/spoiler]"
-                day = firstDay
-                weekDay = firstWeekDay
+
+    def _genOneMonth(self, month, firstDay, firstWeekDay, dayOfYear, curYear,
+                     planes, moons):
+        daysSkipped = 0
+        print ""
+        print "[size=3]%s[/size]" % month.name
+        self._generatePlanes(planes, dayOfYear, curYear)
+        day = firstDay
+        weekDay = firstWeekDay
+
+        print self._genDateEvents(weekDay, day, month, curYear,
+                                          force=True, moons=moons)
+        while (day < month.length):
+            day += 1
+            weekDay += 1
+            dayOfYear += 1
+            weekDay = weekDay % len(self.days)
+            check = self._genDateEvents(weekDay, day, month,
+                                        curYear, moons=moons)
+            if check is None:
+                daysSkipped += 1
+            if check is not None:
                 if daysSkipped > 0:
                     printSkipDays(daysSkipped)
-                    daysSkipped = 0
-                print self._genDateEvents(weekDay, day, month, curYear,
-                                          force=True, moons=moons)
-                while (day < month.length):
-                    day += 1
-                    weekDay += 1
-                    dayOfYear += 1
-                    weekDay = weekDay % len(self.days)
-                    check = self._genDateEvents(weekDay, day, month,
-                                                curYear, moons=moons)
-                    if check is None:
-                        daysSkipped += 1
-                    if check is not None:
-                        if daysSkipped > 0:
-                            printSkipDays(daysSkipped)
-                        daysSkipped = 0
-                        print check
-                firstDay = 1
-                firstWeekDay = (weekDay + 1) % len(self.days)
+                daysSkipped = 0
+                print check
+        firstDay = 1
+        firstWeekDay = (weekDay + 1) % len(self.days)
+        dayOfYear += 1
+        if daysSkipped > 0:
+            printSkipDays(daysSkipped)
+            daysSkipped = 0
+        return firstDay, firstWeekDay, dayOfYear
+
+    def _generatePlanes(self, planes, dayOfYear, curYear):
+        if not planes:
+            return
+        planeList = []
+        coterminousString = ("[u]%s:[/u] [color=Red]Coterminous[/color] for "
+                             "%d more days")
+        remoteString = "[u]%s:[/u] [color=Green]Remote[/color] for %d more days"
+        for plane in planes:
+            v, i = plane.getPlaneAtDate(dayOfYear, curYear, self)
+            if (v == "Coterminous"):
+                planeList.append(coterminousString % (plane.name, i))
+            elif (v == "Remote"):
+                if "Dal Quor" in plane.name:
+                    planeList.append("Dal Quor is still remote")
+                    continue
+                planeList.append(remoteString % (plane.name, i))
+            else:
+                planeList.append("[u]%s:[/u] %s for %d more days" % \
+                                 (plane.name, v, i))
+        if len(planeList) > 0:
+            print "[spoiler=Planar activity]"
+            for item in planeList:
+                print item
+            print "[/spoiler]"
 
     def _genDateEvents(self, weekdayIndex, day, month, year, force=False,
                        moons=None):
@@ -239,6 +257,13 @@ class Plane(object):
         self.waxEnd = self.waxStart + daysWaxing - 1
         self.planeStartYear = planeStartYear
 
+    def __str__(self):
+        return ("<Plane %s, coter %d to %d, wane %d to %d, remote %d to %d, "
+                "wax %d to %d>" % (self.name, self.coterStart, self.coterEnd,
+                                   self.waneStart, self.waneEnd,
+                                   self.remoteStart, self.remoteEnd,
+                                   self.waxStart, self.waxEnd))
+
     def getPlaneAtDate(self, dayOfYear, year, calendar):
         effectiveDay = (year - self.planeStartYear) * calendar.yearLength
         coterminousMod = 0
@@ -246,14 +271,14 @@ class Plane(object):
             if month == self.coterminousMonth:
                 break
             coterminousMod += month.length
-        coterminousMod += self.coterminousDay
-        effectiveDay += dayOfYear + 1 - coterminousMod
-        effectiveDay = effectiveDay % (self.waxEnd + 1)
-        if effectiveDay <= self.coterEnd:
+        coterminousMod += self.coterminousDay - 1# Day of the year coterminous starts
+        effectiveDay += dayOfYear - coterminousMod # Days since coterminous began.
+        effectiveDay = effectiveDay % (self.waxEnd + 1) # Limit it.
+        if effectiveDay <= (self.coterEnd):
             return "Coterminous", self.coterEnd - effectiveDay + 1
-        elif effectiveDay <= self.waneEnd:
+        elif effectiveDay <= (self.waneEnd):
             return "Waning", self.waneEnd - effectiveDay + 1
-        elif effectiveDay <= self.remoteEnd:
+        elif effectiveDay <= (self.remoteEnd):
             return "Remote", self.remoteEnd - effectiveDay + 1
         else:
             return "Waxing", self.waxEnd - effectiveDay + 1

@@ -313,8 +313,8 @@
             "coterminousDay": 1,
             "daysCoterminous": 28,
             "daysRemote": 28,
-            "daysRemoteToCoterminous": 835,
-            "daysCoterminousToRemote": 835
+            "daysRemoteToCoterminous": 812,
+            "daysCoterminousToRemote": 812
         },
         {
             "name": "Shavarath, the Battleground",
@@ -355,6 +355,6 @@
     ],
     "planeStartYear": -9000,
     "startDate": 1,
-    "startYear": 998,
+    "startYear": -9000,
     "startWeekDay": 1
 }
