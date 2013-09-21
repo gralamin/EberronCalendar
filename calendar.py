@@ -358,8 +358,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('calendar', type=argparse.FileType('r'),
                         default=sys.stdin)
+    parser.add_argument('-y',  type=int, default=1, dest="numYears",
+                        help="Number of years to generate.")
     args = parser.parse_args()
     c = Calendar(args.calendar)
     m = genMoons(args.calendar)
     p = genPlanes(args.calendar, c)
-    c.display(moons=m, planes=p)
+    c.display(moons=m, planes=p, numYears=args.numYears)
