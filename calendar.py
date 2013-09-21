@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+#-*- mode:  python; fill-column: 80; comment-column: 80; -*-
 import json
 import sys
 import argparse
@@ -150,7 +152,7 @@ class Calendar:
                         daysSkipped = 0
                         print check
                 firstDay = 1
-                firstWeekDay = weekDay
+                firstWeekDay = (weekDay + 1) % len(self.days)
 
     def _genDateEvents(self, weekdayIndex, day, month, year, force=False,
                        moons=None):
