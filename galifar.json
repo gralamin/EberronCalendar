@@ -235,7 +235,8 @@
             "daysCoterminousToRemote": 33600,
             "coterminousMonth": 1,
             "coterminousDay": 1,
-            "name": "Daanvi, the Perfect Order"
+            "name": "Daanvi, the Perfect Order",
+            "_comment": "coter/remote 100 years every 400"
         },
         {
             "name": "Dal Quor, the Region of Dreams",
@@ -244,7 +245,8 @@
             "daysCoterminous": 0,
             "daysRemote": 9999999999999999,
             "daysRemoteToCoterminous": 0,
-            "daysCoterminousToRemote": 0
+            "daysCoterminousToRemote": 0,
+            "_comment": "always remote"
         },
         {
             "name": "Dolurrh, the Realm of the Dead",
@@ -253,7 +255,8 @@
             "daysCoterminous": 336,
             "daysRemote": 336,
             "daysRemoteToCoterminous": 16464,
-            "daysCoterminousToRemote": 16464
+            "daysCoterminousToRemote": 16464,
+            "_comment": "coter/remote 1 year every 100"
         },
         {
             "name": "Fernia, the Sea of Fire",
@@ -262,7 +265,8 @@
             "daysCoterminous": 28,
             "daysRemote": 28,
             "daysRemoteToCoterminous": 812,
-            "daysCoterminousToRemote": 812
+            "daysCoterminousToRemote": 812,
+            "_comment": "coter/remote 1 month every 5 years"
         },
         {
             "name": "Irian, the Eternal Day",
@@ -271,7 +275,8 @@
             "daysCoterminous": 10,
             "daysRemote": 10,
             "daysRemoteToCoterminous": 494,
-            "daysCoterminousToRemote": 494
+            "daysCoterminousToRemote": 494,
+            "_comment": "coter/remote 10 days every 3 years"
         },
         {
             "name": "Kythri, the Churning Chaos",
@@ -287,7 +292,8 @@
             "waningDist": "normal",
             "daysRemoteToCoterminousLowerBound": "1",
             "daysRemoteToCoterminousUpperBound": "117600",
-            "waxingDist": "normal"
+            "waxingDist": "normal",
+            "_comment": "Kythri laughs at your predictions"
         },
         {
             "name": "Lamannia, the Twilight Forest",
@@ -296,7 +302,8 @@
             "daysCoterminous": 7,
             "daysRemote": 7,
             "daysRemoteToCoterminous": 161,
-            "daysCoterminousToRemote": 161
+            "daysCoterminousToRemote": 161,
+            "_comment": "coter/remote 7 days every year"
         },
         {
             "name": "Mabar, the Endless Night",
@@ -305,7 +312,8 @@
             "daysCoterminous": 3,
             "daysRemote": 5,
             "daysRemoteToCoterminous": 835,
-            "daysCoterminousToRemote": 837
+            "daysCoterminousToRemote": 837,
+            "_comment": "coter 3 days /remote 5 days every 5 years"
         },
         {
             "name": "Risia, the Plain of Ice",
@@ -314,7 +322,8 @@
             "daysCoterminous": 28,
             "daysRemote": 28,
             "daysRemoteToCoterminous": 812,
-            "daysCoterminousToRemote": 812
+            "daysCoterminousToRemote": 812,
+            "_comment": "coter/remote 1 month every 5 years"
         },
         {
             "name": "Shavarath, the Battleground",
@@ -323,16 +332,18 @@
             "daysCoterminous": 336,
             "daysRemote": 336,
             "daysRemoteToCoterminous": 5712,
-            "daysCoterminousToRemote": 5712
+            "daysCoterminousToRemote": 5712,
+            "_comment": "1 year every 36"
         },
         {
             "name": "Syrania, the Azure Sky",
             "coterminousMonth": 7,
             "coterminousDay": 1,
-            "daysCoterminous": 336,
-            "daysRemote": 336,
+            "daysCoterminous": 1,
+            "daysRemote": 1,
             "daysRemoteToCoterminous": 1679,
-            "daysCoterminousToRemote": 1679
+            "daysCoterminousToRemote": 1679,
+            "_comment": "coter/remote 1 day every 10 years"
         },
         {
             "name": "Thelanis, the Faerie Court",
@@ -341,20 +352,22 @@
             "daysCoterminous": 2352,
             "daysRemote": 4704,
             "daysRemoteToCoterminous": 34272,
-            "daysCoterminousToRemote": 34272
+            "daysCoterminousToRemote": 34272,
+            "_comment": "coter 7 years /remote 14 years every 225 years, 102 years between"
         },
         {
             "name": "Xoriat",
-            "coterminousMonth": 7,
-            "coterminousDay": 2,
-            "daysCoterminous": 336,
-            "daysRemote": 336,
-            "daysRemoteToCoterminous": 1175664,
-            "daysCoterminousToRemote": 1175664
+            "coterminousMonth": 10,
+            "coterminousDay": 24,
+            "daysCoterminous": 3360,
+            "daysRemote": 8400,
+            "daysRemoteToCoterminous": 1506120,
+            "daysCoterminousToRemote": 1506120,
+            "_comment": "Making this up"
         }
     ],
-    "planeStartYear": -9000,
+    "planeStartYear": -8000,
     "startDate": 1,
-    "startYear": -9000,
+    "startYear": 998,
     "startWeekDay": 1
 }
